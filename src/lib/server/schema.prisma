@@ -1,6 +1,7 @@
 datasource db {
   provider = "mongodb"
-  url      = env("MONGODB_URI")
+  url      = env("PRISMA_URI")
+  directUrl = env("MONGODB_URI")
 }
 
 generator client {
